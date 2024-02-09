@@ -400,20 +400,25 @@ div#layerStar {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: transparent;
+  background: #7F9D83;
+  border-radius: 100%;
   border: 0;
   cursor: pointer;
 }
 
 .carouselBtn--left {
-  left: -60px;
+  left: -50px;
 }
 
 .carouselBtn--right {
-  right: -60px;
+  right: -50px;
 }
-.carouselBtn img {
-  width: 50px;
+.carouselBtn p {
+  font-size: 40px;
+  color: #CECECE;
+  width: 30px;
+  height: 40px;
+  align-self: center;
 }
 
 .carousel__nav {
