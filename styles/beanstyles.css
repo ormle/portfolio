@@ -35,7 +35,7 @@
 .Cascadebeans {
     position: relative;
     width: 100vw;
-    height: 1000px;
+    height: fit-content;
   }
   
   .bean {

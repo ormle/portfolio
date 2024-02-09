@@ -8,20 +8,10 @@
     <link rel="shortcut icon" href="./assets/Digivice.ico" type="image/x-icon">
   </head>
   <body>
-    <script src="script.js" type="text/javascript"></script>
-    
     <!--Page Content-->
     <!-- Intro -->
     <main>
-      <!-- Sticky Navigation -->
-      <nav>
-        <ul>
-          <li><a href="#top">Welcome</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Info</a></li>
-        </ul>
-      </nav>
+      
 
     <section id="welcome">
       <div class="content">
@@ -60,8 +50,20 @@
       </div>
     </section>
     <section id="main-content">
+
+    <!-- Sticky Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#top">Welcome</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Info</a></li>
+        </ul>
+      </nav>
+
+
       <!-- About Me -->
-      <section id="about">
+      <section class="information" id="about">
         <div class="content">
         <div id="layerStar">
           <div id="StarsGree">
@@ -78,13 +80,43 @@
         </div>
           
         <div class="section-container">
-
+          <div class="row">
+            <div class="column">
+              <div class="pictureFrame">
+                <img id="filmRomel" src="./assets/12.JPG" width="400px" height="300px" alt="An film picture of Romel">
+                <img id="headshotRomel" src="./assets/RomelHead.jpg" width = "200px" height ="180px" alt="A headshot of Romel">
+              </div>
+            </div>
+            <div class="column paragraph">
+              <h3 class="textShadow">I'm Romel Mendoza</h3>
+              <p class="writep BtextShadow">
+                I am in my final year at MacEwan University as a Computer Science Major and Psychology Minor.
+              </br>
+                I have always loved playing games so making games is definitely something i'm interested in doing, 
+                but I am also interested in web-app development as well!
+              </p>
+            </div>
+          </div>
+          <div class="row" id="faves">
+            <h3 class="textShadow" id="quick">Quick Facts:</h2>
+          </div>
+          <div class="row" id="faves">
+            <div class="column" id="facts">
+              <p class="writep">My favorite game is Cave Story</p>
+            </div>
+            <div class="column" id="facts">
+              <p class="writep">I read!</p>
+            </div>
+            <div class="column" id="facts">
+              <p class="writep">Love watching movies</p>
+            </div>
+          </div>
         </div>
         </div>
       </section>
 
       <!-- Projects -->
-      <section id="projects">
+      <section class="information" id="projects">
         <div class="content">
         <div id="layerStar">
           <div id="StarsGree">
@@ -101,13 +133,67 @@
         </div>
           
         <div class="section-container">
+          
+          <div class="carousel">
+            <button class="carouselBtn carouselBtn--left is-hidden">
+              <img src="./assets/leftarrow.png" alt="">
+            </button>
+
+            <div class="carousel__track-container">
+              <ul class="carousel__track">
+                <li class="carousel__slide cur-slide">
+                  <div class="column">
+                    <h2>Bug Snatch</h2>
+                    <h3>(Capstone in collaboration with EPL)</h3>
+                    <p class="writep BtextShadow">In collaboration with EPL we created a game for their digital wall.
+                      This game was created with Unity and as a team we utilized agile methodology to stay on track with development.
+                    </p>
+                  </div>
+                  <div class="column col-projectPics">
+                    <img id="team" src="./assets/gameplay.png" width="280px" height="180px">
+                    <img id="snatch1" src="./assets/IMG_3849.JPG" width="350px" height="250px">
+                    <img id="snatch2" src="./assets/IMG_3850.JPG" width="350px" height="250px">
+                  </div>
+                    
+                </li>
+                <li class="carousel__slide">
+                  <div class="column">
+                    
+                  </div>
+                  <div class="column">
+                    <p>TO BE ADDED</p>
+                  </div>
+                  
+                </li>
+                <li class="carousel__slide">
+                  <div class="column">
+                    <p>TO BE ADDED</p>
+                  </div>
+                  <div class="column">
+                    
+                  </div>
+                  
+                </li>
+              </ul>
+            </div>
+
+            <button class="carouselBtn carouselBtn--right">
+              <img src="./assets/rightarrow.png" alt="">
+            </button>
+
+            <div class="carousel__nav">
+              <button class="carousel__indicator cur-slide"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+            </div>
+          </div>
 
         </div>
         </div>
       </section>
 
       <!-- Contact Info -->
-      <section id="contact">
+      <section class="information" id="contact">
         <div class="content">
         <div id="layerStar">
           <div id="StarsGree">
@@ -123,12 +209,30 @@
           <h2 class="textShadow">Contact Me!</h2>
         </div>
           
-        <div class="section-container">
-
+        <div class="section-container contact">
+            <div class="row email">
+              <img id="email" src="./assets/email.png" width="50px" height="50px">
+              <a class ="textShadow" href="mailto: romel178@hotmail.com">  romel178@hotmail.com</a>
+            </div>
+            <div class="row links">
+              <a style="text-decoration:none" href="https://open.spotify.com/user/solidmap132?si=a95562e9239c464f">
+                <img id="spotify" title="spotify" src="./assets/spotifyicon.png" width="75px" height="75px" alt="The spotify icon">
+              </a>
+              <a style="text-decoration:none" href="https://boxd.it/2A4ab">
+                <img id="letterboxd" title="letterboxd" src="./assets/letterboxdicon.png" width="75px" height="75px" alt="The letterboxd icon">
+              </a>
+              <a style="text-decoration:none" href="https://www.linkedin.com/in/romel-mendoza-0331072aa/">
+                <img id="linkedin" title="linkedin" src="./assets/linkedinicon.png" width="75px" height="75px" alt="The linkedin icon">
+              </a>
+              <a style="text-decoration:none" href="https://github.com/ormle">
+                <img id="github" title="github" src="./assets/github-mark.png" width="75px" height="75px" alt="The github icon">
+              </a>
+            </div>
         </div>
         </div>
       </section>
     </section>  
     </main>
+  <script src="script.js" type="text/javascript"></script>
   </body>
 </html>

@@ -12,17 +12,85 @@ html {
   scroll-behavior: smooth scroll;
 }
 
+img#email {
+  margin: 20px;
+}
+
 div.content {
   padding: 1px 16px;
-  height: 800px;
+  height: fit-content;
+  width: 100vw;
+}
+
+/*Row-columns*/
+.column {
+  color: #CECECE;
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+.column#facts {
+  background-color: #1F1849;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 0px 10px;
+  padding: 20px 0px;
+  height: 60%;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: center;
+}
+
+.row#faves {
+  justify-content: start;
+  height: 15%;
+  color: #EFBB36;
+  margin: 0px 60px -15px 40px;
+  border-radius: 50px;
+}
+
+.row.email{
+  margin: 0px;
+}
+
+.row.links {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.paragraph {
+  background-color: #1F1849;
+  justify-self: start;
+  margin-right: 2vw;
+  border-radius: 30px;
 }
 
 div#header {
-  width: 70vw;
+  width: 60vw;
   height: 100px;
   background-color: #7F9D83;
   text-align: center;
-  margin-left: 190px;
+  margin-left: 340px;
   border-radius: 50px;
 }
 
@@ -35,8 +103,37 @@ div.section-container {
   border-radius: 20px;
 }
 
+div.section-container.contact {
+  height: 200px;
+  margin-bottom: 12vh;
+}
+
+div.pictureFrame {
+  margin-left: 1vw;
+  position: relative;
+}
+
+img#filmRomel {
+  position: relative;
+  right: 0;
+}
+
+img#headshotRomel{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 section#main-content {
-  margin-top: -400px;
+   margin-top: 200px;
+}
+
+section#welcome {
+  padding: 400px;
+}
+
+section.information {
+  margin-top: 20px;
 }
 
 body {
@@ -63,13 +160,40 @@ h2.textShadow {
   text-shadow: 1px 3px black
 }
 
+h3#quick {
+  color: #CECECE;
+  margin: -40px 0px 0px 8px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #1F1849;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h3.textShadow {
+  text-shadow: 1px 3px black
+}
+
 p {
   color:#EFBB36;
   font-size: 30px;
 }
+
+p.writep {
+  color: #CECECE;
+  font-size: 20px;
+}
+
 p.textShadow {
   text-shadow: 0px 2px black;
   filter: drop-shadow(-0.5px -1px 0px white)
+}
+
+p.BtextShadow {
+  text-shadow: 0px 2px black;
+  filter: drop-shadow(-0.5px -1px 0px black)
 }
 
 h1.textShadow {
@@ -81,12 +205,21 @@ h1#openMsg {
   margin-top: 1em;
 }
 
+a.textShadow {
+  font-size: 30px;
+  color:#EFBB36;
+  text-shadow: 0px 2px black;
+  filter: drop-shadow(-0.5px -1px 0px white)
+}
+
+/* Side Nav */
+
 nav {
   width: 30vw;
+  height: 0px;
   position: sticky;
-  top: 150px;
+  top: 100px;
   z-index: 1000;
-  offset-position: 1000px;
 }
 
 nav ul {
@@ -94,6 +227,7 @@ nav ul {
   display: grid;
   gap: 50px;
   height: 80vh;
+  width: fit-content;
   align-content: center;
   justify-content: start;
 }
@@ -115,11 +249,13 @@ nav ul li a {
 nav ul li a:hover{
   background-color: #9ACAA0;
   color: #EFBB36;
+  transform: scale(1.05);
 }
 
 nav ul li a:current {
   background-color: #405042;
   color:#EFBB36;
+  transform: scale(1.1);
 }
 
 /*Four-pointed star*/
@@ -209,16 +345,115 @@ div#Stars {
 div#StarsGree {
   display: flex;
   justify-content: space-between;
-  margin: 0px -10px 0px 0px;
+  margin: 0px 80px 0px 190px;
 }
 
 div#StarSilv {
   display: flex;
-  margin: -110px 0px -110px 10px;
+  margin: -110px 90px -110px 200px;
   justify-content: space-between;
 }
 
 div#layerStar {
   display: contents;
   margin-left: 20px;
+}
+
+/* Carousel */
+
+.carousel {
+  position: relative;
+  height: 550px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel__track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+  background-color: #1F1849;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  bottom: 0;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.carouselBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carouselBtn--left {
+  left: -60px;
+}
+
+.carouselBtn--right {
+  right: -60px;
+}
+.carouselBtn img {
+  width: 50px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0,0,0,0.3);
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.carousel__indicator.cur-slide {
+  background: rgba(0,0,0,0.75);
+}
+
+.is-hidden { display: none; }
+
+.column.col-projectPics {
+  display: flex;
+  flex-direction: column;
+}
+
+img#team {
+  z-index: 2;
+}
+
+img#snatch1 {
+  margin-top: -60px;
+  z-index: 1;
+  align-self: flex-end;
+}
+
+img#snatch2 {
+  margin-top: -50px;
+  z-index: 2;
 }
