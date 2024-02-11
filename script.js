@@ -93,3 +93,55 @@ dotsNavs.addEventListener('click', e => {
     updateDots(curDot, targetDot);
     hideShowArrows(slides, prevBtn, nextBtn, targetIndex);
 });
+
+/* Navigation response */
+
+const nav = document.querySelector('.navigation-container');
+const navBtns = Array.from(nav.children);
+const headers = document.querySelectorAll('.header');
+const welcome = document.querySelector('.welcome');
+//console.log(headers);
+
+const updateNav = function(curNavBtn, clickedNav) {
+    curNavBtn.classList.remove('current');
+    clickedNav.classList.add('current');
+}
+
+const isInViewPort = function(header) {
+    const rect = header.getBoundingClientRect();
+    return (
+        rect.top >=0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+//Respond based on clicks
+nav.addEventListener('click', e => {
+    //Which one was clicked
+    const targetNav = e.target.closest('li');
+    //null if ul clicked
+    if (!targetNav) return;
+
+    const curNavBtn = nav.querySelector('.current');
+    //Get index of clicked nav
+    const targetNavIndex = navBtns.findIndex(nav => nav === targetNav);
+    const clickedNav = navBtns[targetNavIndex].firstChild;
+
+    updateNav(curNavBtn, clickedNav);
+});
+
+//Respond based on scroll position
+document.addEventListener('scroll', e  => {
+    //current nav
+    const curNavBtn = nav.querySelector('.current');
+    //Update based on whats in view
+    if (isInViewPort(headers[0])){
+        updateNav(curNavBtn, navBtns[1].firstChild);
+    } else if (isInViewPort(headers[1])){
+        updateNav(curNavBtn, navBtns[2].firstChild);
+    } else if (isInViewPort(headers[2])){
+        updateNav(curNavBtn, navBtns[3].firstChild);
+    }
+});

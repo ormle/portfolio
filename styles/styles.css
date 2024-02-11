@@ -85,7 +85,7 @@ div.paragraph {
   border-radius: 30px;
 }
 
-div#header {
+div.header {
   width: 60vw;
   height: 100px;
   background-color: #7F9D83;
@@ -252,10 +252,10 @@ nav ul li a:hover{
   transform: scale(1.05);
 }
 
-nav ul li a:current {
+nav ul li a.current {
   background-color: #405042;
   color:#EFBB36;
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 /*Four-pointed star*/
