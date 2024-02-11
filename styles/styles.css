@@ -404,6 +404,8 @@ div#layerStar {
   border-radius: 100%;
   border: 0;
   cursor: pointer;
+  width: 4%;
+  height: 12%;
 }
 
 .carouselBtn--left {
@@ -416,9 +418,7 @@ div#layerStar {
 .carouselBtn p {
   font-size: 40px;
   color: #CECECE;
-  width: 30px;
-  height: 40px;
-  align-self: center;
+  margin-top: 35%;
 }
 
 .carousel__nav {
