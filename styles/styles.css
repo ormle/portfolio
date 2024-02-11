@@ -196,6 +196,10 @@ p.BtextShadow {
   filter: drop-shadow(-0.5px -1px 0px black)
 }
 
+span.yellow {
+  color:#EFBB36;
+}
+
 h1.textShadow {
   text-shadow: 1px 4px black;
   filter: drop-shadow(-1px -1px 0px white)
