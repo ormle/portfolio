@@ -45,6 +45,13 @@ div.content {
   align-items: center;
 }
 
+.column.app {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 100px;
+} 
+
 .row{
   display: flex;
   justify-content: center;
@@ -214,6 +221,39 @@ a.textShadow {
   color:#EFBB36;
   text-shadow: 0px 2px black;
   filter: drop-shadow(-0.5px -1px 0px white)
+}
+
+
+
+.img#snatch1.snatch:hover {
+  transform: scale(1.5);
+}
+
+img.sApp:hover {
+  transform: scale(2);
+}
+
+img.sAppup:hover{
+  transform: scale(2) translateY(-50px);
+}
+
+img.sAppdown:hover{
+  transform: scale(2) translateY(50px);
+}
+
+img#team {
+  z-index: 2;
+}
+
+img#snatch1 {
+  margin-top: -60px;
+  z-index: 1;
+  align-self: flex-end;
+}
+
+img#snatch2 {
+  margin-top: -50px;
+  z-index: 2;
 }
 
 /* Side Nav */
@@ -450,19 +490,4 @@ div#layerStar {
 .column.col-projectPics {
   display: flex;
   flex-direction: column;
-}
-
-img#team {
-  z-index: 2;
-}
-
-img#snatch1 {
-  margin-top: -60px;
-  z-index: 1;
-  align-self: flex-end;
-}
-
-img#snatch2 {
-  margin-top: -50px;
-  z-index: 2;
 }
