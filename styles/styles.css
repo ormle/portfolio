@@ -203,6 +203,14 @@ p.BtextShadow {
   filter: drop-shadow(-0.5px -1px 0px black)
 }
 
+a.link {
+  color: #CECECE;
+}
+
+a.link:hover {
+  color: #EFBB36;
+}
+
 span.yellow {
   color:#EFBB36;
 }
@@ -223,7 +231,9 @@ a.textShadow {
   filter: drop-shadow(-0.5px -1px 0px white)
 }
 
-
+img.link:hover {
+  transform: scale(1.3);
+}
 
 .img#snatch1.snatch:hover {
   transform: scale(1.5);
