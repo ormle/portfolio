@@ -235,7 +235,7 @@ img.link:hover {
   transform: scale(1.3);
 }
 
-.img#snatch1.snatch:hover {
+.snatch:hover {
   transform: scale(1.5);
 }
 
@@ -517,4 +517,6 @@ div#layerStar {
 .column.col-projectPics {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
