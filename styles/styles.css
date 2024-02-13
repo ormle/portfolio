@@ -520,11 +520,13 @@ div#layerStar {
 
 .carousel__indicator:hover{
   background: #9ACAA0;
+  color: #EFBB36;
   transform: scale(1.25);
 }
 
 .carousel__indicator.cur-slide {
   background: rgba(64,80,66,1);
+  color: #EFBB36;
 }
 
 .carousel__indicator.cur-slide:hover {
