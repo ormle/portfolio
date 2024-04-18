@@ -1,139 +1,56 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romels Website</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/beanstyles.css">
-    <link rel="stylesheet" href="./styles/arrowstyles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./assets/Digivice.ico" type="image/x-icon">
   </head>
   <body>
-    <!--Page Content-->
-    <!-- Intro -->
-    <main>
-      
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <ul class="nav-container">
+        <li><a class="current" href="#about" >About</a></li> |
+        <li><a href="#projects">Projects</a></li> |
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <section id="welcome">
-      <div class="content">
-        <div id="Cascadebeans">
-          <div class="bean animate appear" id="mainbean">
-            <h1 id="openMsg" class="textShadow">Welcome
-              <br />
-              I'm Romel!
-            </h1>
-            <div id="Stars">
-              <div class="star"></div>
-              <div class="star"></div>
-            </div>
-            <p class="textShadow">Scroll for more!</p>
-            <a href="#about" class="arrow-container">
-              <div class="arrow"></div>
-              <div class="arrow"></div>
-              <div class="arrow"></div>  
-            </a>
-          </div>
-          <div class="bean"></div>
-          <div class="bean animate appear animate--delay"></div>
-          <div class="bean"></div>
-          <div class="bean animate appear animate--delay"></div>
-          <div class="bean"></div>
-          <div class="bean animate appear animate--delay"></div>
-          <div class="bean"></div>
-          <div class="bean animate appear animate--delay"></div>
-          <div class="bean"></div>
-          <div class="bean animate appear animate--delay"></div>
-          <div class="bean"></div>
-          <div class="bean animate appear animate--delay"></div>
-          <div class="bean"></div>
-        </div>
-        
+    <!-- Welcome -->
+    <div class="welcome-container" name="welcome">
+      <h1>Welcome &#128075
+        <br/>
+        I'm Romel!
+      </h1>
+      <img id="mobile-headshot" src="./assets/RomelHead.jpg">
+      <div class="link-container">
+        <a style="text-decoration:none" href="https://www.linkedin.com/in/romel-mendoza-0331072aa/">
+          <img class="link" id="linkedin" title="linkedin" src="./assets/linkedinicon.png" width="75px" height="75px" alt="The linkedin icon">
+        </a>
+        <a style="text-decoration:none" href="https://github.com/ormle">
+          <img class="link" id="github" title="github" src="./assets/github-mark.png" width="75px" height="75px" alt="The github icon">
+        </a>
       </div>
-    </section>
-    <section id="main-content">
+    </div>
 
-    <!-- Sticky Navigation -->
-      <nav>
-        <ul class="navigation-container">
-          <li><a class="current" href="#top">Welcome</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Info</a></li>
-        </ul>
-      </nav>
-
-
-      <!-- About Me -->
-      <section class="information" id="about">
-        <div class="content">
-        <div id="layerStar">
-          <div id="StarsGree">
-            <div class="starG"></div>
-            <div class="starG"></div>
-          </div>
-          <div id="StarSilv">
-            <div class="starS"></div>
-            <div class="starS"></div>
-          </div>
-        </div>
-        <div class="header">
-          <h2 class="textShadow">About Me</h2>
-        </div>
-          
-        <div class="section-container">
-          <div class="row">
-            <div class="column">
-              <div class="pictureFrame">
-                <img id="filmRomel" src="./assets/12.JPG" width="400px" height="300px" alt="An film picture of Romel">
-                <img id="headshotRomel" src="./assets/RomelHead.jpg" width = "200px" height ="180px" alt="A headshot of Romel">
-              </div>
-            </div>
-            <div class="column paragraph">
-              <h3 class="textShadow">I'm Romel Mendoza</h3>
-              <p class="writep BtextShadow">
-                I am in my final year at MacEwan University as a Computer Science Major and Psychology Minor.
-              </br>
-                I have always loved playing games so making games is definitely something i'm interested in doing, 
-                but I am also interested in web-app development as well!
-              </p>
-            </div>
-          </div>
-          <div class="row" id="faves">
-            <h3 class="textShadow" id="quick">Quick Facts:</h2>
-          </div>
-          <div class="row" id="faves">
-            <div class="column" id="facts">
-              <p class="writep">My favorite game is Cave Story</p>
-            </div>
-            <div class="column" id="facts">
-              <p class="writep">I read!</p>
-            </div>
-            <div class="column" id="facts">
-              <p class="writep">Love watching movies</p>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
-
-      <!-- Projects -->
-      <section class="information" id="projects">
-        <div class="content">
-        <div id="layerStar">
-          <div id="StarsGree">
-            <div class="starG"></div>
-            <div class="starG"></div>
-          </div>
-          <div id="StarSilv">
-            <div class="starS"></div>
-            <div class="starS"></div>
-          </div>
-        </div>
-        <div class="header">
-          <h2 class="textShadow">Projects</h2>
-        </div>
-          
-        <div class="section-container">
-          
+    <!-- About Me -->
+    <div class="about-container" id="about">
+      <h2 >About</h2>
+      <p>Hello! My journey began in a introductory python class and from there
+        my interest in programming grew. From then on I majored in CS and continued my minor in psychology. 
+        <br/>
+        As a recent graduate from MacEwan University I am excited to continue expanding upon the skills I have gathered so far. I'm looking forward to learning more about web and game development!
+        <br/>
+        When im not programming I enjoy reading, music and watching movies!
+      </p>
+    </div>
+    <!-- Projects -->
+    <div class="projects-content" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <!-- BUGSNATCH -->
+        <div class="project"> 
           <div class="carousel">
             <button class="carouselBtn carouselBtn--left is-hidden">
               <p><</p>
@@ -142,70 +59,18 @@
             <div class="carousel__track-container">
               <ul class="carousel__track">
                 <li class="carousel__slide cur-slide">
-                  <div class="column">
-                    <h2 class="projectTitle"><a class="link" href="https://github.com/ormle/Team-Ladybug">Bug Snatch</a></h2>
-                    <h3>(Capstone - <a class="link" href="https://www.epl.ca/digital-exhibits/#wall">EPL</a> collaboration)</h3>
-                    <p class="writep BtextShadow">In collaboration with EPL we created a bug catching game for their digital wall!
-                    </br>
-                      This game was created with <span class="yellow">Unity</span> and as a team we utilized agile methodology to stay on track with development.
-                      During game development we had to consider how visitors would interact with the big screens and had to make 
-                      good use of the screen space available to us. 
-                  </br>
-                      <a class="link" href="https://drive.google.com/file/d/1AeY8-R9OSjKKCI-u9PpM_X0OTA44IdHK/view?usp=sharing"> Gameplay Link</a>
-                    </p>
-                  </div>
-                  <div class="column col-projectPics">
-                    <img class="snatch" src="./assets/gameplay.png" width="250px" height="150px">
-                    <img class="snatch" src="./assets/IMG_3849.JPG" width="250px" height="150px">
-                    <img class="snatch" src="./assets/IMG_3850.JPG" width="250px" height="150px">
-                    <img class="snatch" src="./assets/IMG_4026.JPG" width="200px" height="140px">
-                  </div>
-                    
+                  <img class="carousel-image" src="./assets/IMG_4026.JPG" alt="Picture of a digital game wall">
                 </li>
                 <li class="carousel__slide">
-                  <div class="column">
-                    <h2 class="projectTitle">Scheduling App</h2>
-                    <h3>(CMPT 395)</h3>
-                    <p class="writep BtextShadow">Using <span class="yellow">Android Studio</span> and <span class="yellow">Java</span>, in a team of 4 we created an app to schedule employees.
-                    </br>
-                    Also using agile methodology, we ensured that the app would help a manager easily schedule employees
-                    for a shift, create a shift schedule. Employee information such as contact info and availability would also be readily
-                    available and editable.
-                    </p>
-                  </div>
-                  <div class="column app">
-                    <img class="sAppdown" src="./assets/daySched.png" width="100px" height="150px">
-                    <img class="sApp" src="./assets/EmployeeList.png" width="100px" height="150px">
-                    <img class="sAppup" src="./assets/Availability.png" width="100px" height="150px">
-                    <img class="sAppdown" src="./assets/MonthlySched.png" width="100px" height="150px">
-                    <img class="sApp" src="./assets/Schedule.png" width="100px" height="150">
-                    <img class="sAppup" src="./assets/popup.png" width="100px" height="150">
-                  </div>
-                  
+                  <img class="carousel-image" src="./assets/gameplay.png" alt="Gameplay of a bug catching game">
                 </li>
                 <li class="carousel__slide">
-                  <div class="column">
-                    <h2 class="projectTitle"><a class="link" href="https://github.com/ormle/Command-Line-Interface">Command Line Interface</a></h2>
-                    <h3>(CMPT 360)</h3>
-                    <p class="writep BtextShadow">
-                      In <span class="yellow">C</span> another student and I made a command-line interface that functions
-                      similarly to a regular command-line interface. In this class we learned about piping, background processes,
-                      scheduling algorithms, file management, and related operating system functions.
-                    </br>
-                      Included functionality includes: piping, background processes, redirection, checking command history,
-                      rerunning last command and more!
-                    </p>
-                  </div>
-                  <div class="column app">
-                    <img class="tApp" src="./assets/terminal1.png" width="280px" height="60px">
-                    <img class="tApp" src="./assets/terminal2.png" width="250px" height="80px">
-                    <img class="tApp" src="./assets/terminal3.png" width="250px" height="80px">
-                    <img class="tApp" src="./assets/terminal4.png" width="250px" height="80px">
-                    <img class="tApp" src="./assets/terminal5.png" width="250px" height="80px">
-                    <img class="tAppUp" src="./assets/terminal6.png" width="290px" height="60px">
-                  </div>
-                  
+                  <img class="carousel-image" src="./assets/IMG_3850.JPG" alt="Screenshot of a bug up close and information about that bug">"
                 </li>
+                 <li class="carousel__slide">
+                  <img class="carousel-image" src="./assets/IMG_3849.JPG" alt="End screen capture of bugs in a terrarium">"
+                </li>
+                
               </ul>
             </div>
 
@@ -214,54 +79,143 @@
             </button>
 
             <div class="carousel__nav">
-              <button class="carousel__indicator cur-slide"><p class="nav BtextShadow">Bug Snatch</p></button>
-              <button class="carousel__indicator"><p class="nav BtextShadow">Scheduler</p></button>
-              <button class="carousel__indicator"><p class="nav BtextShadow">CLI</p></button>
+              <button class="carousel__indicator cur-slide"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
             </div>
           </div>
+          <h3>Bug Snatch</h3>
+          <p class="link-and-list"><a href="https://github.com/ormle/Team-Ladybug">Project Github</a>
+            |  
+            <a href="https://drive.google.com/file/d/1AeY8-R9OSjKKCI-u9PpM_X0OTA44IdHK/view?usp=sharing">Gameplay Link</a>
+            <br/>
+            Languages/Technologies: Unity, C#, Github
+          </p>
+          <p class="project-description">
+            In collaboration with EPL we created a bug catching game for their digital wall!
+            This game was created with Unity and as a team we utilized agile methodology to stay on track with development. During game development we had to consider how visitors would interact with the big screens and had to make good use of the screen space available to us.
+          </p>
+        </div>
+        <!-- SCHEDULER -->
+        <div class="project"> 
+          <div class="carousel">
+            <button class="carouselBtn carouselBtn--left is-hidden">
+              <p><</p>
+            </button>
 
-        </div>
-        </div>
-      </section>
+            <div class="carousel__track-container">
+              <ul class="carousel__track">
+                <li class="carousel__slide cur-slide">
+                  <img class="carousel-image-s" src="./assets/daySched.png" alt="Screenshot of scheduled employees for one day">
+                </li>
+                <li class="carousel__slide">
+                  <img class="carousel-image-s" src="./assets/Availability.png" alt="Screenshot of an employee's monthly availability">
+                </li>
+                <li class="carousel__slide">
+                  <img class="carousel-image-s" src="./assets/MonthlySched.png" alt="Screenshot of a months curren schedule">"
+                </li>
+                 <li class="carousel__slide">
+                  <img class="carousel-image-s" src="./assets/Schedule.png" alt="Screenshot of assigning employees to a schedule">"
+                </li>
+                
+              </ul>
+            </div>
 
-      <!-- Contact Info -->
-      <section class="information" id="contact">
-        <div class="content">
-        <div id="layerStar">
-          <div id="StarsGree">
-            <div class="starG"></div>
-            <div class="starG"></div>
-          </div>
-          <div id="StarSilv">
-            <div class="starS"></div>
-            <div class="starS"></div>
-          </div>
-        </div>
-        <div class="header">
-          <h2 class="textShadow">Contact Me!</h2>
-        </div>
-          
-        <div class="section-container contact">
-            <div class="row email">
-              <img id="email" src="./assets/mail.png" width="50px" height="50px">
-              <a class ="textShadow" style="color: #7F9D83;" href="mailto: romel178@hotmail.com">  romel178@hotmail.com</a>
+            <button class="carouselBtn carouselBtn--right">
+              <p>></p>
+            </button>
+
+            <div class="carousel__nav">
+              <button class="carousel__indicator cur-slide"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
             </div>
-            <div class="row links">
-              <a style="text-decoration:none" href="https://open.spotify.com/user/solidmap132?si=a95562e9239c464f">
-                <img class="link" id="spotify" title="spotify" src="./assets/spotifyicon.png" width="75px" height="75px" alt="The spotify icon">
-              </a>
-              <a style="text-decoration:none" href="https://www.linkedin.com/in/romel-mendoza-0331072aa/">
-                <img class="link" id="linkedin" title="linkedin" src="./assets/linkedinicon.png" width="75px" height="75px" alt="The linkedin icon">
-              </a>
-              <a style="text-decoration:none" href="https://github.com/ormle">
-                <img class="link" id="github" title="github" src="./assets/github-mark.png" width="75px" height="75px" alt="The github icon">
-              </a>
+          </div>
+          <h3>Scheduler App</h3>
+          <p class="link-and-list">
+            Languages/Technologies: Android Studio, Java, Github
+          </p>
+          <p class="project-description">
+            Using Android Studio and Java, in a team of 4 we created an app to schedule employees.
+            Also using agile methodology, we ensured that the app would help a manager easily schedule employees for a shift, create a shift schedule. Employee information such as contact info and availability would also be readily available and editable.
+          </p>
+        </div>
+        <!-- CURBFRESH -->
+        <div class="project"> 
+          <div class="carousel">
+            <button class="carouselBtn carouselBtn--left is-hidden">
+              <p><</p>
+            </button>
+
+            <div class="carousel__track-container">
+              <ul class="carousel__track">
+                <li class="carousel__slide cur-slide">
+                  <img class="carousel-image-s" src="./assets/CurbFresh1.png" alt="Splash page of a restaurant ordering website">
+                </li>
+                <li class="carousel__slide">
+                  <img class="carousel-image-s" src="./assets/CurbFresh2.png" alt="">
+                </li>
+                <li class="carousel__slide">
+                  <img class="carousel-image-s" src="./assets/CurbFresh3.png" alt="">"
+                </li>
+                <li class="carousel__slide">
+                  <img class="carousel-image-s" src="./assets/CurbFresh4.png" alt="">"
+                </li>
+                <li class="carousel__slide">
+                  <img class="carousel-image-s" src="./assets/CurbFresh5.png" alt="">"
+                </li>
+                <li class="carousel__slide">
+                  <img class="carousel-image-s" src="./assets/CurbFresh6.png" alt="">"
+                </li>
+                
+              </ul>
             </div>
-        </div>
-        </div>
-      </section>
-    </section>  
-    </main>
-  <script src="script.js" type="text/javascript"></script>
+
+            <button class="carouselBtn carouselBtn--right">
+              <p>></p>
+            </button>
+
+            <div class="carousel__nav">
+              <button class="carousel__indicator cur-slide"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+            </div>
+          </div>
+          <h3>CurbFresh</h3>
+          <p class="link-and-list">
+            <a href="https://github.com/ormle/CurbFresh">Project Github</a>
+            Languages/Technologies: React, Express, Node.js, MongoDB, JavaScript, Github
+          </p>
+          <p class="project-description">
+            As a group of 4, we created a restaurant ordering and pickup management system. 
+            Using this app, a manager can manage a restaurants menu items, change order status' and view restaurant analytics. 
+            Customers can place orders using this app.
+            As a group we learned full back end to front end implementation of a full web-application.
+          </p>
+        </div>      
+      </div>
+    </div>
+    
+    <!-- Contact Me -->
+    <div class="contact-container" id="contact">
+      <h2>Contact Me</h2>
+      <!-- <img class="email-container" src="./assets/EmailForm.png"> -->
+      
+      <form action="https://api.web3forms.com/submit" method="POST" class="form">
+        <a id="my-email" href="mailto: ormle8@gmail.com">ormle8@gmail.com</a>
+        <input type="hidden" name="access_key" value="c50ce0e2-61d8-4e0e-b8a7-d23d127aaa0b">
+        <input type="text" name="name" placeholder="Your Name" class="contact-name">
+        <input type="email" name="email" placeholder="Enter your email" class="contact-email">
+        <textarea name="message" placeholder="Enter your message" class="contact-message"></textarea>
+        <button type="submit" class="send-email">Send</button>
+      </form>
+    </div>
+    </nav>
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
