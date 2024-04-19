@@ -4,6 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     color: #FDF0D1;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 h2 {
@@ -240,7 +242,7 @@ h1 {
 /* Email Container */
 
 .email-container {
-    width: 100%;
+    width: 90%;
     height: 100%;
     padding-left: 4px;
 }
@@ -248,14 +250,13 @@ h1 {
 a#my-email {
     color:#FDF0D1;
     font-weight: bolder;
-    /* position: absolute;
-    bottom: -2400px;
-    right: 104px; */
 }
 
 form.form {
     background-image: url("./assets/EmailForm.png");
-    background-size: 100% 100%;
+    background-size: 95% 100%;
+    background-repeat: no-repeat;
+    background-position: 8px;
     display: flex;
     flex-direction: column;
     gap: 16px;
