@@ -324,6 +324,13 @@ button.send-email {
     width: 80px;
     height: 40px;
     text-align: center;
+    padding-right: .7em;
+    cursor: pointer;
+}
+
+button.send-email:hover {
+    background-color: #FDF0D1;
+    color:#ED683C;
 }
 
 /* Styling Screen Size BreakPoints */
