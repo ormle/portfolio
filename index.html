@@ -26,10 +26,10 @@
       <img id="mobile-headshot" src="./assets/RomelHead.jpg">
       <div class="link-container">
         <a style="text-decoration:none" href="https://www.linkedin.com/in/romel-mendoza-0331072aa/">
-          <img class="link" id="linkedin" title="linkedin" src="./assets/linkedinicon.png" width="75px" height="75px" alt="The linkedin icon">
+          <img class="link" id="linkedin" title="linkedin" src="./assets/linkedinicon.png" alt="The linkedin icon">
         </a>
         <a style="text-decoration:none" href="https://github.com/ormle">
-          <img class="link" id="github" title="github" src="./assets/github-mark.png" width="75px" height="75px" alt="The github icon">
+          <img class="link" id="github" title="github" src="./assets/github-mark.png" alt="The github icon">
         </a>
       </div>
     </div>
@@ -37,13 +37,16 @@
     <!-- About Me -->
     <div class="about-container" id="about">
       <h2 >About</h2>
-      <p>Hello! My journey began in a introductory python class and from there
-        my interest in programming grew. From then on I majored in CS and continued my minor in psychology. 
-        <br/>
-        As a recent graduate from MacEwan University I am excited to continue expanding upon the skills I have gathered so far. I'm looking forward to learning more about web and game development!
-        <br/>
-        When im not programming I enjoy reading, music and watching movies!
-      </p>
+      <div class="about-info">
+        <p>Hello! My journey began in a introductory python class and from there
+          my interest in programming grew. From then on I majored in CS and continued my minor in psychology. 
+          <br/>
+          As a recent graduate from MacEwan University I am excited to continue expanding upon the skills I have gathered so far. I'm looking forward to learning more about web and game development!
+          <br/>
+          When im not programming I enjoy reading, music and watching movies!
+        </p>
+        <img id="headshot-two" src="./assets/RomelHead.jpg">
+      </div>
     </div>
     <!-- Projects -->
     <div class="projects-content" id="projects">
@@ -85,17 +88,19 @@
               <button class="carousel__indicator"></button>
             </div>
           </div>
-          <h3>Bug Snatch</h3>
-          <p class="link-and-list"><a href="https://github.com/ormle/Team-Ladybug">Project Github</a>
-            |  
-            <a href="https://drive.google.com/file/d/1AeY8-R9OSjKKCI-u9PpM_X0OTA44IdHK/view?usp=sharing">Gameplay Link</a>
-            <br/>
-            Languages/Technologies: Unity, C#, Github
-          </p>
-          <p class="project-description">
-            In collaboration with EPL we created a bug catching game for their digital wall!
-            This game was created with Unity and as a team we utilized agile methodology to stay on track with development. During game development we had to consider how visitors would interact with the big screens and had to make good use of the screen space available to us.
-          </p>
+          <div class="project-desc">
+            <h3>Bug Snatch</h3>
+            <p class="link-and-list"><a href="https://github.com/ormle/Team-Ladybug">Project Github</a>
+              |  
+              <a href="https://drive.google.com/file/d/1AeY8-R9OSjKKCI-u9PpM_X0OTA44IdHK/view?usp=sharing">Gameplay Link</a>
+              <br/>
+              Languages/Technologies: Unity, C#, Github
+            </p>
+            <p class="project-description">
+              In collaboration with EPL we created a bug catching game for their digital wall!
+              This game was created with Unity and as a team we utilized agile methodology to stay on track with development. During game development we had to consider how visitors would interact with the big screens and had to make good use of the screen space available to us.
+            </p>
+          </div>
         </div>
         <!-- SCHEDULER -->
         <div class="project"> 
@@ -133,14 +138,16 @@
               <button class="carousel__indicator"></button>
             </div>
           </div>
-          <h3>Scheduler App</h3>
-          <p class="link-and-list">
-            Languages/Technologies: Android Studio, Java, Github
-          </p>
-          <p class="project-description">
-            Using Android Studio and Java, in a team of 4 we created an app to schedule employees.
-            Also using agile methodology, we ensured that the app would help a manager easily schedule employees for a shift, create a shift schedule. Employee information such as contact info and availability would also be readily available and editable.
-          </p>
+          <div class="project-desc">
+            <h3>Scheduler App</h3>
+            <p class="link-and-list">
+              Languages/Technologies: Android Studio, Java, Github
+            </p>
+            <p class="project-description">
+              Using Android Studio and Java, in a team of 4 we created an app to schedule employees.
+              Also using agile methodology, we ensured that the app would help a manager easily schedule employees for a shift, create a shift schedule. Employee information such as contact info and availability would also be readily available and editable.
+            </p>
+          </div>
         </div>
         <!-- CURBFRESH -->
         <div class="project"> 
@@ -186,17 +193,20 @@
               <button class="carousel__indicator"></button>
             </div>
           </div>
-          <h3>CurbFresh</h3>
-          <p class="link-and-list">
-            <a href="https://github.com/ormle/CurbFresh">Project Github</a>
-            Languages/Technologies: React, Express, Node.js, MongoDB, JavaScript, Github
-          </p>
-          <p class="project-description">
-            As a group of 4, we created a restaurant ordering and pickup management system. 
-            Using this app, a manager can manage a restaurants menu items, change order status' and view restaurant analytics. 
-            Customers can place orders using this app.
-            As a group we learned full back end to front end implementation of a full web-application.
-          </p>
+          <div class="project-desc">
+            <h3>CurbFresh</h3>
+            <p class="link-and-list">
+              <a href="https://github.com/ormle/CurbFresh">Project Github</a>
+              <br/>
+              Languages/Technologies: React, Express, Node.js, MongoDB, JavaScript, Github
+            </p>
+            <p class="project-description">
+              As a group of 4, we created a restaurant ordering and pickup management system. 
+              Using this app, a manager can manage a restaurants menu items, change order status' and view restaurant analytics. 
+              Customers can place orders using this app.
+              As a group we learned full back end to front end implementation of a full web-application.
+            </p>
+          </div>
         </div>      
       </div>
     </div>

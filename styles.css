@@ -16,19 +16,19 @@ h2 {
 
 h3 {
     color: #ED683C;
-    padding-left: 20px;
-    margin-top: 32px;
+    padding-left: 1.25em;
+    margin-top: 2em;
     font-size: 24px;
     font-weight: bolder;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
 }
 
 p {
-    padding-left: 8px;
+    padding-left: 0.5em;
 }
 
 p.link-and-list {
-    padding-left: 20px;
+    padding-left: 1.25em;
     font-size: 16px;
     color:#ED683C;
     font-weight: bolder;
@@ -38,11 +38,19 @@ p a {
     color:#ED683C;
 }
 
+p a:hover {
+    color:#E7B961;
+}
+
 p.project-description {
     color:#ED683C;
     font-size: 16px;
-    padding-left: 20px;
-    padding-bottom: 24px;
+    padding-left: 1.25em;
+    padding-bottom: 1.5em;
+}
+
+form a#my-email:hover {
+    color: #ED683C;
 }
 
 /* Navigation Styling */
@@ -59,15 +67,15 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.625em;
     color: #FDF0D1;
 }
 
 .nav-container {
-    padding-left: 16px;
+    padding-left: 1em;
     background-color: #E7B961;
-    width: 264px;
-    height: 60px;
+    width: 16.5em;
+    height: 3.75em;
     align-items: center;
     border-radius: 40px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
@@ -78,6 +86,11 @@ nav ul {
     font-weight: bolder;
     font-size: 16px;
     text-decoration: none;
+}
+
+.nav-container li a:hover {
+    color: #ED683C;
+    text-decoration: underline #ED683C;
 }
 
 /* Welcome Message */
@@ -91,20 +104,21 @@ h1 {
 
 /* Welcome container */
 .welcome-container{
-    margin-top: 80px;
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* Mobile headshot Image Display */
 .welcome-container #mobile-headshot {
     object-fit: cover;
     margin: 0 auto;
-    width: 240px;
-    height: 240px;
+    width: 15em;
+    height: 15em;
     border-radius: 100%;
     border: 16px solid #F2AC5D;
-    margin-bottom: 12px;
+    margin-bottom: 0.75em;
 }
 
 /* Link Container */
@@ -113,8 +127,23 @@ h1 {
     display: flex;
     flex-direction: row;
     width: fit-content;
-    gap: 20px;
+    gap: 1.25em;
     align-self: center;
+}
+
+.welcome-container .link {
+    width: 4.6875em;
+    height: 4.6875em; 
+}
+
+.welcome-container .link:hover {
+    transform: scale(1.3);
+}
+
+/* HIDE HEADSHOT-TWO on mobile */
+
+img#headshot-two {
+    display: none;
 }
 
 /* Project container --MOBILE-- */
@@ -123,14 +152,15 @@ h1 {
     background: #FDF0D1;
     width: 100vw;
     height: fit-content;
-    margin-right: 20px;
+    margin-right: 1.25em;
+    padding-bottom: 3em;
 }
 
 /* Carousel */
 
 .carousel {
     position: relative;
-    height: 240px;
+    height: 15em;
     width: 80%;
     margin: 0 auto;
   }
@@ -155,12 +185,14 @@ h1 {
     position: absolute;
     display: flex;
     flex-direction: row;
+    gap: 0.2em;
     top: 0;
     bottom: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 1.875em;
+    margin-right: 0.3em;
 }
 
 .carouselBtn {
@@ -172,14 +204,15 @@ h1 {
     cursor: pointer;
     width: 4%;
     height: 12%;
+    z-index: 100;
 }
 
 .carouselBtn--left {
-    left: -44px;
+    left: -3.8em;
 }
 
 .carouselBtn--right {
-    right: -6px;
+    right: 0.8em;
 }
 
 .carouselBtn p {
@@ -205,7 +238,7 @@ h1 {
 }
 
 .carousel__indicator:hover{
-    background: #9ACAA0;
+    background: #F2AC5D;
     transform: scale(1.5);
 }
 
@@ -227,7 +260,7 @@ h1 {
     height: 100%;
     margin: 0 auto;
     border-radius: 30px;
-    border: 4px solid #E7B961;
+    /* border: 4px solid #E7B961; */
 }
 
 .carousel-image-s {
@@ -236,15 +269,15 @@ h1 {
     height: 100%;
     margin: 0 auto;
     border-radius: 30px;
-    border: 4px solid #E7B961;
+    /* border: 4px solid #E7B961; */
 }
 
 /* Email Container */
 
-.email-container {
-    width: 90%;
-    height: 100%;
-    padding-left: 4px;
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a#my-email {
@@ -254,28 +287,31 @@ a#my-email {
 
 form.form {
     background-image: url("./assets/EmailForm.png");
-    background-size: 95% 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: 8px;
+    background-position: center;
+    min-width: 22em;
+    max-width: 25em;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 16px;
+    padding-top: 7.5em;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 input.contact-name{
-    width: 320px;
+    width: 300px;
 }
 
 input.contact-email {
     right: 20px;
-    width: 320px;
+    width: 300px;
 }
 
 textarea.contact-message {
-    width: 320px;
+    width: 300px;
     height: 100px;
 }
 
@@ -288,4 +324,139 @@ button.send-email {
     width: 80px;
     height: 40px;
     text-align: center;
+}
+
+/* Styling Screen Size BreakPoints */
+
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+    .welcome-container h1 {
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 3em;
+    }
+
+    img#mobile-headshot {
+        display: none;
+    }
+
+    img#headshot-two {
+        display: flex;
+        object-fit: cover;
+        margin: 2em 1em;
+        width: 13em;
+        height: 13em;
+        border-radius: 100%;
+        border: 16px solid #F2AC5D;
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    .welcome-container h1 {
+        font-size: 4.5em;
+    }
+
+    .carousel {
+        height: 20em;
+    }
+
+}
+
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .welcome-container{
+        flex-direction: row;
+    }
+
+    .welcome-container h1 {
+        padding-right: 2em;
+    }
+
+    .about-info p {
+        padding-left: 1.5em;
+    }
+
+    img#headshot-two {
+        margin: 0em 2em;
+        width: 16em;
+        height: 16em;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        padding-right: 2em;
+    }
+
+    .carousel {
+        width: 250em;
+        padding-top: 2em;
+    }
+
+    .carousel__track-container {
+        margin-left: 3em;
+    }
+
+    .carouselBtn--left {
+        left: -0.8em;
+    }
+
+    .carouselBtn p {
+        margin-top: 0.5em;
+    }
+    
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    .welcome-container h1 {
+        font-size: 6em;
+        padding-left: 2em;
+    }
+
+    .welcome-container .link {
+        width: 6em;
+        height: 6em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    img#headshot-two {
+        margin: -2em 6em;
+        width: 22em;
+        height: 22em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .about-container p {
+        padding-left: 3em;
+    }
+
+    .project-desc p {
+        font-size: 1.5em;
+    }
+
+    .carousel {
+        height: 30em;
+        width: 400em;
+    }
+
+    .carouselBtn--left {
+        left: 0.75em;
+    }
+
 }
