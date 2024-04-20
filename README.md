@@ -1,2 +1,6 @@
 Hello! This is my portfolio website I created!
-(Currently works best on Mobile! Tablet and Desktop styling in progress!)
+This works on mobile, tablet or desktop!
+
+Some future additions to be added:
+- Change website theme colors
+- Website animations
