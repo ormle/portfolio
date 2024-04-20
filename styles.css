@@ -281,6 +281,7 @@ img#headshot-two {
 }
 
 a#my-email {
+    margin-top: 1em;
     color:#FDF0D1;
     font-weight: bolder;
 }
